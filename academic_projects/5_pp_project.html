@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes — Resolução do Quebra-Cabeça EtenityII</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<section class="project-details">
+    <h1>Resolução do Quebra-Cabeça EtenityII</h1>
+
+    <p><strong>Linguagem: </strong>C</p>
+    <p><strong>Bibliotecas-Chave: </strong>MPI</p>
+    <p><strong>Status: </strong>Concluído</p>
+    <p><strong>Equipe: </strong>3 Desenvolvedores</p>
+    <p><strong>Tipo de Projeto: </strong>Acadêmico</p>
+    <p><strong>Link do Projeto: </strong>Repositório Privado. Caso tenha interesse, entre em contato comigo.</p>
+
+    <h2>Descrição</h2>
+    <p>O jogo Eternity II foi lançado em 2007 com a promessa de pagar US$ 2 milhões para a primeira
+        pessoa que conseguisse apresentar uma solução completa. Contudo, até hoje, nenhuma solução
+        correta foi descoberta e o prêmio continua sem ganhadores.<br><br>
+        Eternity II é um quebra-cabeça clássico de casamento de bordas que envolve a colocação de
+        256 peças em um tabuleiro de 16x16. Cada peça tem as suas bordas com diferentes combinações
+        de formas e cores (que neste texto simplificamos para apenas cores). As peças devem ser colo-
+        cadas no tabuleiro de maneira que todas as cores de suas bordas sejam uma correspondência
+        às bordas das peças adjacentes. As bordas do tabuleiro são um caso com tratamento especial
+        que apenas podem receber peças com bordas cinzas. Cada uma das peças pode ser rotacionada
+        e tem, portanto, 4 possíveis colocações para cada posição do tabuleiro. Há 22 cores no total,
+        sem incluir as bordas cinzas. No jogo original a peça do centro do tabuleiro é pré-determinada
+        e algumas dicas sobre o posicionamento de algumas peças são dadas.<br><br>
+        Este jogo foi criado para ser difícil de resolver através de métodos de força bruta e continua
+        a ser intratável na sua configuração original. De fato o número total de combinações (assumindo que todas as
+        peças são diferentes e ignorando as dicas de peças pré-colocadas) é 256! × 4^256
+        ou, aproximadamente, 1.15 × 10^661. Um limite superior mais justo pode ser obtido levando em
+        conta as dicas dos criadores do jogo que colocam o número de possibilidades em confortáveis
+        3.11 × 10^545 posições possíveis.<br><br>
+        Já que esperamos terminar o jogo antes do fim do universo, para nossos
+        propósitos iremos lidar com algumas instâncias menores do problema. Nesse sentido, o foco desse projeto
+        consiste em elaborar uma solução paralela do quebra-cabeça utilizando MPI.
+    </p>
+
+    <h2>Funcionalidades</h2>
+    <ul>
+        <li>Resolução do Quebra-Cabeça Sequencial.</li>
+        <li>Resolução do Quebra-Cabeça Paralela (MPI).</li>
+        <li>Análise dos Resultados.</li>
+    </ul>
+
+    <a href="../projetos.html" class="back-btn">Voltar</a>
+</section>
+
+</body>
+</html>

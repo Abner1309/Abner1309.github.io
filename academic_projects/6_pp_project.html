@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes — Filtro de Realce Seletivo</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<section class="project-details">
+    <h1>Filtro de Realce Seletivo</h1>
+
+    <p><strong>Linguagem: </strong>C</p>
+    <p><strong>Bibliotecas-Chave: </strong>Pthreads, OpenMP e CUDA</p>
+    <p><strong>Status: </strong>Concluído</p>
+    <p><strong>Equipe: </strong>3 Desenvolvedores</p>
+    <p><strong>Tipo de Projeto: </strong>Acadêmico</p>
+    <p><strong>Link do Projeto: </strong>Repositório Privado. Caso tenha interesse, entre em contato comigo.</p>
+
+    <h2>Descrição</h2>
+    <p>Neste projeto vamos aplicar conceitos de paralelismo em memória compartilhada (Pthreads e
+        OpenMP) e em GPU (CUDA), comparando desempenho, correção e escalabilidade usando o
+        mesmo problema — um pipeline de processamento de imagem não trivial. Você irá implementar
+        um filtro de realce seletivo em imagens PPM P3. Imagens PPM P3 são um formato de imagem
+        simples, baseado em arquivos de texto puro que podem ser facilmente geradas e visualizadas
+        utilizando aplicações como o Gimp.<br><br>
+        O filtro de realce que trabalharemos consiste em 3 etapas que são aplicadas a cada um dos
+        pixels da imagem de entrada.
+    </p>
+    <ul>
+        <li>Conversão para tons de cinza (grayscale).</li>
+        <li>Desfoque de raio variável (variable-radius blur).</li>
+        <li>Ajuste Seletivo (Sharpen).</li>
+    </ul>
+
+    <h2>Funcionalidades</h2>
+    <ul>
+        <li>Construção do Pipeline Sequencial.</li>
+        <li>Construção do Pipeline Paralelo (Pthreads, OpenMP e CUDA).</li>
+        <li>Análise dos Resultados.</li>
+    </ul>
+
+    <a href="../projetos.html" class="back-btn">Voltar</a>
+</section>
+
+</body>
+</html>

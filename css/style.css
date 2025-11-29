@@ -1,0 +1,251 @@
+/* Fonte */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --bg: #0d0d0f;
+    --bg-light: #18181b;
+    --text: #e6e6e6;
+    --accent: #6a5acd;
+    --accent2: #8b5cf6;
+    --transition: 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    background-image: url("../img/image3.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ---------- HEADER ---------- */
+
+header {
+    background: rgba(20, 20, 25, 0.9);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #222;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 50;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.logo {
+    font-size: 1.4rem;
+    color: var(--accent);
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    color: var(--text);
+    text-decoration: none;
+    transition: var(--transition);
+    font-weight: 300;
+}
+
+.menu a:hover,
+.menu a.active {
+    color: var(--accent2);
+}
+
+/* ---------- HERO ---------- */
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.hero-content {
+    text-align: center;
+    max-width: 650px;
+}
+
+.hero-content h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    white-space: nowrap;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    opacity: 0.8;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    color: white;
+    padding: 12px 25px;
+    background: var(--accent2);
+    border-radius: 8px;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* ---------- CONTENT ---------- */
+
+.container {
+    max-width: 1100px;
+    margin: 120px auto;
+    padding: 20px;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    color: var(--accent2);
+}
+
+/* ---------- PROJECTS ---------- */
+
+.filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    padding: 8px 20px;
+    border: none;
+    background: var(--bg-light);
+    color: var(--text);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background: var(--accent);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.project-card {
+    background: var(--bg-light);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #222;
+    transition: var(--transition);
+}
+
+.project-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent2);
+}
+
+.project-card a {
+    color: var(--accent2);
+    text-decoration: none;
+}
+
+/* ---------- PROJECT DETAILS PAGE ---------- */
+
+.project-details {
+    max-width: 900px;
+    margin: 150px auto 60px auto;
+    background: rgba(24, 24, 27, 0.9);
+    border: 1px solid #222;
+    padding: 40px;
+    border-radius: 15px;
+    backdrop-filter: blur(8px);
+}
+
+.project-details h1 {
+    font-size: 2.4rem;
+    color: var(--accent2);
+    margin-bottom: 20px;
+}
+
+.project-details h2 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: var(--accent);
+}
+
+.project-details p,
+.project-details li {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    opacity: 0.9;
+}
+
+.project-details ul {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+/* Botão de voltar */
+.back-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 18px;
+    background: var(--accent2);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.back-btn:hover {
+    opacity: 0.8;
+}
+
+/* ---------- BLOG ---------- */
+
+.post-card {
+    display: block;
+    padding: 20px;
+    background: var(--bg-light);
+    border: 1px solid #222;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    transition: var(--transition);
+    color: var(--text);
+}
+
+.post-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-3px);
+}
+
+/* ---------- ABOUT ---------- */
+
+.about p {
+    line-height: 1.8;
+    font-size: 1.1rem;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <h1 class="logo">AbnerBC</h1>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="projetos.html">Projetos</a></li>
+            <li><a href="sobre.html">Sobre Mim</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="container">
+    <h2 class="section-title">Projetos</h2>
+
+    <div class="filters">
+        <button class="filter-btn active" data-tag="all">Todos</button>
+        <button class="filter-btn" data-tag="c">C</button>
+        <button class="filter-btn" data-tag="java">Java</button>
+        <button class="filter-btn" data-tag="python">Python</button>
+        <button class="filter-btn" data-tag="unity">Unity</button>
+        <button class="filter-btn" data-tag="vhdl">VHDL</button>
+    </div>
+
+    <div class="projects-grid" id="projects-grid">
+
+        <div class="project-card" data-tag="python">
+            <h3>Processamento De Linguagem Natural</h3>
+            <p>Python: LangChain + Google Gemini</p>
+            <a class="details-button" href="academic_projects/9_pln_project.html">Ver Detalhes</a>
+        </div>
+
+        <div class="project-card" data-tag="unity">
+            <h3>Desenvolvimento De Jogo Web</h3>
+            <p>Unity: 2D + Top Down + Pixel Art</p>
+            <a class="details-button" href="academic_projects/8_cg_project.html">Ver Detalhes</a>
+        </div>
+
+        <div class="project-card" data-tag="java">
+            <h3>Compilador de Uma Calculadora</h3>
+            <p>Java: Scanner</p>
+            <a class="details-button" href="academic_projects/7_cm_project.html">Ver Detalhes</a>
+        </div>
+
+        <div class="project-card" data-tag="c">
+            <h3>Filtro De Realce Seletivo</h3>
+            <p>C: Pthreads + OpenMP + CUDA</p>
+            <a class="details-button" href="academic_projects/6_pp_project.html">Ver Detalhes</a>
+        </div>
+
+        <div class="project-card" data-tag="c">
+            <h3>Resolução do Quebra-Cabeça EtenityII</h3>
+            <p>C: MPI</p>
+            <a class="details-button" href="academic_projects/5_pp_project.html">Ver Detalhes</a>
+        </div>
+
+        <div class="project-card" data-tag="python">
+            <h3>Agente Inteligente no Super Mario World</h3>
+            <p>Python: NEAT + Gym Retrô</p>
+            <a class="details-button" href="academic_projects/4_ai_project.html">Ver Detalhes</a>
+        </div>
+
+        <div class="project-card" data-tag="vhdl">
+            <h3>Somador de Ponto Flutuante em Placa FPGA</h3>
+            <p>VHDL: IEEE.STD_LOGIC_1164.ALL + IEEE.NUMERIC.STD.ALL</p>
+            <a class="details-button" href="academic_projects/3_sd_project.html">Ver Detalhes</a>
+        </div>
+
+        <div class="project-card" data-tag="c">
+            <h3>Representação de Números Com Muitos Algarismos</h3>
+            <p>C: StandardIO + StandardLib </p>
+            <a class="details-button" href="academic_projects/2_pe_project.html">Ver Detalhes</a>
+        </div>
+
+        <div class="project-card" data-tag="python">
+            <h3>Análise De Dados: Don't Panic - The Facts About Population</h3>
+            <p>Python: Pandas + MatPlotLib</p>
+            <a class="details-button" href="academic_projects/1_bcc_project.html">Ver Detalhes</a>
+        </div>
+
+    </div>
+</section>
+
+<script src="js/filtros.js"></script>
+
+</body>
+</html>
