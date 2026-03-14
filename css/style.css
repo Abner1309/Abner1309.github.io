@@ -243,6 +243,11 @@ nav {
     transform: translateY(-3px);
 }
 
+.image-posts {
+    max-width: 100%;
+    height: auto;
+}
+
 /* ---------- ABOUT ---------- */
 
 .about p {
